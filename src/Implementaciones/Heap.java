@@ -56,6 +56,18 @@ public class Heap implements HeapsTDA {
     public boolean isEmpty() {
         return cantidad == 0;
     }
+// Heapsort
+public static int[] heapSort(Heap heapOriginal) {
+    int n = heapOriginal.size();
+    int [] ordenado = new int[n];
+
+
+    for (int i = (n-1); i >= 0; i--){
+        ordenado[i] = heapOriginal.extractMax();
+    }
+    return ordenado;
+}
+
 
     // ========== Métodos privados ==========
 
