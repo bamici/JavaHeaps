@@ -23,6 +23,23 @@ public class TestHeap {
         }
 
         System.out.println("¿Heap vacío después de extraer todo? " + heap.isEmpty());
+
+        // HeapSort (prueba)
+        System.out.println("\nProbando heapSort:");
+        heap.insert(1);
+        heap.insert(4);
+        heap.insert(5);
+        heap.insert(2);
+        heap.insert(3);
+
+
+        int[] listaOrdenada = Heap.heapSort(heap);
+        System.out.println("Lista ordenada mediante HeapSort:");
+        for (int num : listaOrdenada) {
+            System.out.print(num + " ");
+        }
     }
+        
 }
+
 
